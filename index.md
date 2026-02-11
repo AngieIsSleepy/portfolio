@@ -1,7 +1,11 @@
+---
+layout: default
+---
+# Anqi dDai
 <html>
 
 <!-- TODO: Replace Mr. Miyamoto's name with yours -->
-<h1>The Portfolio of Shigeru Miyamoto</h1>
+<h1>The Portfolio of Anqi Dai</h1>
 
 <h2>Projects</h2>
 
@@ -12,4 +16,5 @@
 
 <!-- TIP: Rename this file "index.html", and it will become the default landing page whenever someone navigates their browser to your domain. -->
 </html>
+
 
