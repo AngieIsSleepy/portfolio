@@ -1,131 +1,455 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Angie's Page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Angie's Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Patrick+Hand&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body data-lang="en">
+    <header class="top-nav">
+        <div class="logo">
+            <a href="#" style="text-decoration: none; color: inherit;">Angie's Page</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro"><span class="en">Welcome</span><span class="zh">主页</span></a></li>
+				<li><a href="#projects"><span class="en">My Projects</span><span class="zh">我的项目</span></a></li>
+                <li><a href="#games"><span class="en">My Games</span><span class="zh">游戏项目</span></a></li>
+                <li><a href="#aboutme"><span class="en">About Me</span><span class="zh">关于我</span></a></li>
+				<li><a href="#contact"><span class="en">Contact</span><span class="zh">联系信息</span></a></li>
+                <li><button id="lang-toggle" class="lang-btn">中 / EN</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        
+        <section id="intro" class="paper-card">
+            <div class="tape"></div> 
+            <div class="card-content">
+                <div class="card-left">
+                    <img src="images/selfie.jpg" alt="Angie" class="portrait" />
+                </div>
+                <div class="card-right">
+                    <h1>
+                        <span class="en">Welcome!</span>
+                        <span class="zh">Welcome!</span>
+                    </h1>
+                    <div class="en">
+                        <p style="font-size: 1.5rem; margin-top: 20px;">
+                            I am Anqi Dai and you can call me Angie. 
+                            I am a Data Science junior at the University of Michigan,
+                            and will be studying Data Science and Machine Learning at University College London starting fall 2026.
+                            Currently seeking internship for summer 2026.
+                            Explore my page!
+                        </p>
+                    </div>
+                    <div class="zh">
+                        <p style="font-size: 1.5rem; margin-top: 20px;">
+                            你好！我是戴安启，是一名大三学生，
+                            正在美国密歇根安娜堡大学攻读数据科学专业，
+                            即将在九月前往英国伦敦大学学院读数据科学和机器学习项目的研究生。
+                            正在积极寻找2026年暑期实习的机会。
+                            欢迎探索我的主页！
+                        </p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#contact" class="social-icon en" title="Contact Me"><span>✉️</span></a>
+                        <a href="#contact" class="social-icon zh" title="联系方式"><span>✉️</span></a>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">My Games</a></li>
-							<li><a href="#two">To be built</a></li>
-							<li><a href="#three">To be built</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+                        <a href="#aboutme" class="social-icon en" title="View My Resume"><span>💼</span></a>
+                        <a href="#aboutme" class="social-icon zh" title="查看简历"><span>💼</span></a>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+                        <a href="#cats" class="social-icon en" title="Meet My Cats"><span>🐈</span></a>
+                        <a href="#cats" class="social-icon zh" title="小猫咪"><span>🐈</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Welcome</h1>
-							<p>I am Anqi Dai, Angie, and 安启. Explore my page!</p>
-						</div>
-					</section>
+        <section id="projects" class="paper-card">
+            <div class="card-content">
+                <div class="card-right" style="width: 100%;">
+                    <h1 style="border-bottom: 3px dashed #d1c8b8; padding-bottom: 10px; margin-bottom: 30px;">
+                        <span class="en">My Projects</span>
+                        <span class="zh">我的项目</span>
+                    </h1>
+                    
+                    <div style="margin-bottom: 40px;">
+                        <h2>
+                            <span class="en"><strong>Dual Prediction System</strong></span>
+                            <span class="zh">基于社媒内容的心理健康检索系统</span>
+                        </h2>
+    
+                        <div class="en">
+                            <p>This is a lightweight, non-clinical NLP information retrieval framework designed to bridge the "semantic gap" in mental health support.</p>
+                            <ul>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-						    <div class="content">
-						        <div class="inner">
-						            <h2>Legend of Zelda-Rebuild(Unity)</h2>
-						            <p>This is my first Unity Engine project. Me and my partner worked to remake the Eagle Dungeon from the classic NES game: Legend of Zelda. 
-										I contributed mainly by building the scene through different aspects, including room transition, enemy spawn point, and the interaction with puzzles and collectables.
-										After getting more familiar with Unity components and C# language, I hope to continue my journey and create more interesting games. </p>
-						            <ul class="actions">
-						                <li><a href="https://alistayyds.itch.io/legend-of-zelda-rebuild">Play on Itch.io</a></li>
-						            </ul>
-						        </div>
-						    </div>
-						</section>
+                                <li>Instead of relying on rigid keyword searches, it makes predictions based on users' natural expressions.</li>
+                                <li>The system simultaneously predicts a user's potential mental health problems (e.g., anxiety, burnout) and their MBTI-based personality.</li>
+                                <li>By prioritizing context and personal coping styles, it delivers more empathetic support without attempting clinical diagnosis.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="zh">
+                            <p>本项目是一个轻量级的非临床 <span class="std-en">NLP</span> 信息检索框架，旨在消除心理健康支持中常见的语义误差。</p>
+                            <ul>
+                                <li>模型通过检索抓取关键词，分析用户的评论、帖子，判断潜在的心理问题以及性格特点。</li>
+                                <li>理解文本时，它会同时预测用户的心理困扰（如焦虑、抑郁倾向）以及基于 <span class="std-en">MBTI</span> 的简单性格分析。</li>
+                                <li>通过结合语境与个人风格，系统能在不进行临床诊断的前提下，提供更具同理心、更切实可行的建议与支持。</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-top: 20px; display: flex; gap: 15px;">
+                            <a href="#" target="_blank" class="project-btn">
+                                <span class="en">View on GitHub</span>
+                                <span class="zh">查看 <span class="std-en">GitHub</span></span>
+                            </a>
+                            
+                            <a href="assets/486project.pdf" target="_blank" class="project-btn">
+                                <span class="en">Read Paper</span>
+                                <span class="zh">详细介绍</span>
+                            </a>
+                        </div>
+                    </div><hr style="border: none; border-top: 2px dashed #d1c8b8; margin: 50px 0;">
+                    <div style="margin-bottom: 40px;">
+                        <h2>
+                            <span class="en"><strong>VeroEat: AI-Driven Food Safety App</strong></span>
+                            <span class="zh"><span class="std-en">VeroEat</span>：<span class="std-en">AI</span> 驱动的食品安全助手</span>
+                        </h2>
+                            
+                        <div class="en">
+                            <p>A mobile application built with <strong>Expo (React Native)</strong> and <strong>Jac</strong>, focusing on personalized allergen detection and food recall tracking.</p>
+                            <ul>
+                                <li><strong>Intelligent Scanning:</strong> Integrated OpenFoodFacts API to fetch real-time ingredient data and cross-reference it with user-defined allergy profiles.</li>
+                                <li><strong>AI Recommendation Engine:</strong> Implemented a <strong>Jac-based backend</strong> that leverages LLMs to provide safe, alternative product suggestions when allergens are detected.</li>
+                                <li><strong>State Management:</strong> Developed complex profile switching logic and a virtual inventory system to track scan history and product safety.</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="zh">
+                            <p>一个基于 <strong><span class="std-en">Expo (React Native)</span></strong> 和 <strong><span class="std-en">Jac</span></strong> 语言开发的手机应用，专注于个性化过敏原检测与食品召回追踪。</p>
+                            <ul>
+                                <li><strong>智能扫描分析：</strong> 集成 <span class="std-en">OpenFoodFacts API</span> 获取实时成分数据，并与用户自定义的过敏原档案进行匹配。</li>
+                                <li><strong><span class="std-en">AI</span> 推荐引擎：</strong> 在 <strong><span class="std-en">Jac</span> 后端</strong> 中集成大语言模型 (<span class="std-en">LLM</span>)，当检测到有害成分时，自动为用户提供健康、安全的替代品建议。</li>
+                                <li><strong>复杂状态管理：</strong> 设计并实现了多用户切换逻辑及虚拟库存系统，持久化存储用户的扫描历史与安全反馈。</li>
+                            </ul>
+                        </div>
+
+                        <div class="app-gallery">
+                            <img src="assets/pictures/vero1.jpg" alt="App Scan Feature" class="app-screen">
+                            <img src="assets/pictures/vero2.jpg" alt="Profile feature" class="app-screen">
+                            <img src="assets/pictures/vero3.jpg" alt="Inventory Feature" class="app-screen">
+                        </div>
+
+                        <p class="gallery-caption">
+                            <span class="en">* Currently under active development. More UI updates coming soon!</span>
+                            <span class="zh">* 正在开发中，界面与功能仍在持续迭代完善。</span>
+                        </p>
+
+                        <div style="margin-top: 20px; display: flex; gap: 15px;">
+                            <a href="https://github.com/yangji-i/VeroEat" target="_blank" class="project-btn">
+                                <span class="en">View on GitHub </span>
+                                <span class="zh">查看<span class="std-en">GitHub</span></span>
+                            </a>
+                        </div>
+                </div>
+        </section>
+
+        <section id="games" class="paper-card">
+            <div class="card-content">
+                <div class="card-right" style="width: 100%;">
+                    <h1 style="border-bottom: 3px dashed #d1c8b8; padding-bottom: 10px; margin-bottom: 30px;">
+                        <span class="en">My Games🎮</span>
+                        <span class="zh">游戏项目🎮</span>
+                    </h1>
+                    
+                    <div style="margin-bottom: 40px;">
+                        <h2>
+                            <span class="en"><strong>Legend of Zelda - Rebuild</strong></span>
+                            <span class="zh">塞尔达传说 - 1986年初代重制版</span>
+                        </h2>
+                        
+                        <div class="en">
+                            <p>A recreation of the classic NES <em>Legend of Zelda</em> Eagle Dungeon, developed using <strong>Unity Engine</strong>. This project served as my introduction to game engine mechanics and level design.</p>
+                            <ul>
+                                <li><strong>Level Construction & Logic:</strong> Built the dungeon scenes and programmed core interactive systems, including enemy spawn points, reward pickups, and door-unlocking triggers under different conditions.</li>
+                                <li><strong>Audio-Visual Polish:</strong> Responsible for embedding sound effects, as well as programming the smooth room transition.</li>
+                                <li><strong>Custom Puzzle Mechanics:</strong> Designed and implemented a unique "Ice Gun" feature. Players can freeze enemies into pushable ice blocks. I also engineered the puzzle logic requiring multiple pressure plates to be activated simultaneously by these blocks to unlock specific doors.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="zh">
+                            <p>基于 <strong><span class="std-en">Unity</span></strong> 和 <strong><span class="std-en">C#</span></strong> 开发的《塞尔达传说》初代神鹰迷宫重制版。这是我的首个游戏项目，全面锻炼了我的场景搭建与脚本编写能力。</p>
+                            <ul>
+                                <li><strong>关卡搭建与交互逻辑：</strong> 负责核心场景的搭建与系统编写，包括可复用的敌人生成点、奖励拾取逻辑，以及普通房间与特殊隐藏房间的开门触发条件设置。</li>
+                                <li><strong>视听体验优化：</strong> 编写了平滑的房间切换动画逻辑，并负责了全流程音效的镶嵌与触发管理。</li>
+                                <li><strong>自定义解谜机制：</strong> 创作了“冰冻枪”与压力板的复合解谜机制。玩家可将敌人冰冻为冰块并推至压力板上，触发开门机关</li>
+                            </ul>
+                        </div>
+
+                        <div class="app-gallery">
+                            <img src="assets/pictures/zelda2.gif" alt="Zelda Gameplay 1" class="app-screen game-screen">
+                            <img src="assets/pictures/zelda1.gif" alt="Zelda Gameplay 2" class="app-screen game-screen">
+                        </div>
+
+                        <div style="margin-top: 20px;">
+                            <a href="https://alistayyds.itch.io/legend-of-zelda-rebuild" target="_blank" class="project-btn">
+                                <span class="en">Play on Itch.io</span>
+                                <span class="zh">在 <span class="std-en">Itch.io</span> 上游玩</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <hr style="border: none; border-top: 2px dashed #d1c8b8; margin: 50px 0;">
+                    <div>
+                        <h2>
+                            <span class="en"><strong>Another Me</strong></span>
+                            <span class="zh"><strong><span class="std-en">Another Me</span></strong></span>
+                        </h2>
+                        
+                        <div class="en">
+                            <p>My first fully independent game project: a narrative-driven <strong>2D puzzle platformer</strong>. Featuring a minimalist hand-drawn pixel art style, all visual assets, mechanics, and level designs were created entirely by myself.</p>
+                            <ul>
+                                <li><strong>Core Mechanic:</strong> Designed and programmed a system where players must coordinate two characters simultaneously to navigate through the levels.</li>
+                                <li><strong>Level & Puzzle Design:</strong> Built various interactive puzzles utilizing the mirror mechanic, such as cooperative door-opening, shooting water drops to activate remote triggers, and using portals to redirect water trajectories.</li>
+                                <li><strong>Art & Narrative:</strong> Crafted all pixel art assets. The minimalist aesthetic perfectly serves the emotional narrative of two hearts overcoming obstacles to unite.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="zh">
+                            <p>独立制作游戏：一款叙事驱动的 <strong><span class="std-en">2D</span> 横版解谜平台游戏</strong>。采用极简的手绘像素风格，所有代码逻辑、关卡设计与视觉美术均由我个人独立完成。</p>
+                            <ul>
+                                <li><strong>核心“镜像”机制：</strong> 设计并编写了双控系统，玩家需要左右脑互相配合，同时控制两个角色来突破关卡障碍。</li>
+                                <li><strong>关卡与交互设计：</strong> 结合镜像机制设计了丰富的解谜要素，例如互相协助触发机关开门、发射水滴激活远距离机关、以及利用传送门改变落点等复合逻辑。</li>
+                                <li><strong>美术与叙事表达：</strong> 独立绘制所有的像素美术，极简手绘风格帮助服务于情感叙事。</li>
+                            </ul>
+                        </div>
+
+                        <div class="app-gallery">
+                            <img src="assets/pictures/anotherme1.gif" alt="Another Me Gameplay 1" class="app-screen game-screen">
+                            <img src="assets/pictures/anotherme2.gif" alt="Another Me Gameplay 2" class="app-screen game-screen">
+                        </div>
+
+                        <p class="gallery-caption">
+                            <span class="en">* Planning to update the game with more polished art and mechanics soon.</span>
+                            <span class="zh">* 此项目后续将进一步打磨美术表现与玩法细节。</span>
+                        </p>
+
+                        <div style="margin-top: 20px;">
+                            <a href="https://alistayyds.itch.io/another-me" target="_blank" class="project-btn">
+                                <span class="en">Play on Itch.io</span>
+                                <span class="zh">在 <span class="std-en">Itch.io</span> 上游玩</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutme" class="paper-card">
+            <div class="card-content">
+                <div class="card-right" style="width: 100%;">
+                    <h1 style="border-bottom: 3px dashed #d1c8b8; padding-bottom: 10px; margin-bottom: 30px;">
+                        <span class="en">About Me</span>
+                        <span class="zh">关于我</span>
+                    </h1>
+                    
+                    <div class="en">
+                        <ul class="about-list">
+                            <li><strong>🎓 Education:</strong> I am currently studying at University of Michigan, Ann Arbor and will be pursuing my Master's degree at University College London.</li>
+                            <li><strong>💡 Interests:</strong> Passionate about AI-driven applications, Information Retrieval, and exploring the innovative intersection of AI and Video Games.</li>
+                            <li><strong>💼 Career Aspirations:</strong> I am actively seeking opportunities in both the <strong>Tech industry</strong> (Data Analysis, Applied AI, Full-stack Development) and the <strong>Gaming industry</strong> (Game Design, Operations, QA/Test Development).</li>
+                            <li><strong>🎮 Gaming Profile:</strong> As an active gamer with diverse gaming experiences across multiple genres. Feel free to check my gaming experience pdf below!</li>
+                            <li><strong>🛠️ Skills:</strong> 
+                                <div class="skills-container">
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">Front-end & Back-end</span>
+                                    <span class="skill-tag">Unity</span>
+                                    <span class="skill-tag">Godot</span>
+                                    <span class="skill-tag">Japanese (N3)</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Tensorflow</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="zh">
+                        <ul class="about-list">
+                            <li><strong>🎓 教育背景：</strong> 我目前就读于<strong>密歇根大学安娜堡分校</strong> ，并将前往<strong>伦敦大学学院</strong> 计算机学院攻读硕士学位。</li>
+                            <li><strong>💡 研究与兴趣：</strong> 对 <span class="std-en">AI</span> 驱动的应用开发、信息检索（<span class="std-en">IR</span>）以及 <span class="std-en">AI</span> 与游戏的交叉融合方向充满热情，正在积极学习中。</li>
+                            <li><strong>💼 职业发展：</strong> 目前正在积极寻找<strong>互联网行业</strong>（数据分析、<span class="std-en">AI</span> 应用、前后端开发）以及<strong>游戏行业</strong>（游戏策划、运营、测试开发）的实习与全职机会。</li>
+                            <li><strong>🎮 游戏经历：</strong> 我是一名涉猎广泛的游戏玩家。如果对我的游戏阅历感兴趣，欢迎查看下方的<strong>游戏经历</strong>文档！</li>
+                            <li><strong>🛠️ 技能关键词：</strong> 
+                                <div class="skills-container">
+                                    <span class="skill-tag std-en">C++</span>
+                                    <span class="skill-tag">前后端开发</span>
+                                    <span class="skill-tag std-en">Unity</span>
+                                    <span class="skill-tag std-en">Godot</span>
+                                    <span class="skill-tag">日语 (N3)</span>
+                                    <span class="skill-tag std-en">Python</span>
+                                    <span class="skill-tag std-en">Tensorflow</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 40px; padding-top: 25px; border-top: 2px dashed #eee;">
+                        <h3 style="margin-bottom: 20px; font-size: 1.1rem; color: #555;">
+                            <span class="en">📄 View My Documents</span>
+                            <span class="zh">📄 查看我的简历与文档</span>
+                        </h3>
+                        
+                        <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                            
+                            <a href="assets/resume_en.pdf" target="_blank" class="project-btn en" style="background-color: #f0f4f8; border-color: #c0d1e3;">
+                                Resume
+                            </a>
+                            <a href="assets/resume_zh.pdf" target="_blank" class="project-btn zh" style="background-color: #f0f4f8; border-color: #c0d1e3;">
+                                求职简历
+                            </a>
+
+                            <a href="assets/CV_Detailed_en.pdf" target="_blank" class="project-btn en" style="background-color: #f9f0f8; border-color: #e3c0d8;">
+                                Detailed CV
+                            </a>
+                            <a href="assets/CV_Detailed_zh.pdf" target="_blank" class="project-btn zh" style="background-color: #f9f0f8; border-color: #e3c0d8;">
+                                详细 CV
+                            </a>
+
+                            <a href="assets/Gaming_Profile_en.pdf" target="_blank" class="project-btn en" style="background-color: #f0f8f1; border-color: #c0e3c5;">
+                                Gaming Experience
+                            </a>
+                            <a href="assets/Gaming_Profile_zh.pdf" target="_blank" class="project-btn zh" style="background-color: #f0f8f1; border-color: #c0e3c5;">
+                                游戏经历
+                            </a>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="paper-card">
+            <div class="card-content">
+                <div class="card-right" style="width: 100%;">
+                    <h1 style="border-bottom: 3px dashed #d1c8b8; padding-bottom: 10px; margin-bottom: 30px;">
+                        <span class="en">Contact 📩</span>
+                        <span class="zh">联系信息 📩</span>
+                    </h1>
+                    <div class="contact-links" style="font-size: 1.1rem; line-height: 1.8;">
+                        <div class="en">
+                            <p><strong>Email:</strong> <a href="mailto:angie.dai@hotmail.com" style="color: #8b7355; text-decoration: none; border-bottom: 1px dashed #8b7355;">angie.dai@hotmail.com</a></p>
+                            <p><strong>WeChat:</strong> 18051856061</p>
+                            <p><strong>Phone:</strong> +1 734-489-4507 | +86 180-5185-6061</p>
+                            <p><strong>GitHub:</strong> <a href="https://github.com/AngieIsSleepy" target="_blank" style="color: #8b7355; text-decoration: none; border-bottom: 1px dashed #8b7355;">AngieIsSleepy</a></p>
+                            
+                        </div>
+                        
+                        <div class="zh">
+                            <p><strong>邮箱：</strong> <a href="mailto:angie.dai@hotmail.com" style="color: #8b7355; text-decoration: none; border-bottom: 1px dashed #8b7355;">angie.dai@hotmail.com</a></p>
+                            <p><strong>微信：</strong> 18051856061</p>
+                            <p><strong>电话:</strong> +1 734-489-4507 | +86 180-5185-6061</p>
+                            <p><strong><span class="std-en">GitHub</span>：</strong> <a href="https://github.com/AngieIsSleepy" target="_blank" style="color: #8b7355; text-decoration: none; border-bottom: 1px dashed #8b7355;">AngieIsSleepy</a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-						<section>
-					        <div class="content">
-					            <div class="inner">
-					                <h2>Another Me</h2>
+        <section id="cats" class="paper-card">
+            <div class="tape" style="left: 50%; transform: translateX(-50%) rotate(2deg);"></div> 
+            
+            <div class="card-content">
+                <div class="card-right" style="width: 100%;">
+                    <h1 style="text-align: center; border-bottom: none; margin-bottom: 40px;">
+                        <span class="en">Meet My Cats 🐈</span>
+                        <span class="zh">我的猫猫 🐈</span>
+                    </h1>
+                    
+                    <div class="cat-gallery">
+                        <div class="polaroid-frame frame-1">
+                            <div class="tape"></div> 
+                            <img src="assets/pictures/cat1.jpg" alt="猫猫 1">
+                            <!-- <p class="caption">
+                                <span class="en">Meow~</span>
+                                <span class="zh">Meow~</span>
+                            </p> -->
+                        </div>
+                        
+                        <div class="polaroid-frame frame-2">
+                            <div class="tape"></div>
+                            <img src="assets/pictures/cat4.jpg" alt="猫猫 2">
+                            <!-- <p class="caption">
+                                <span class="en">Zzz...</span>
+                                <span class="zh">Zzz...</span>
+                            </p> -->
+                        </div>
 
-									<p> This is the second project of the course, and the first game I have made independently. I designed the core 'mirroring' mechanics and some interesting levels to utilize this feature.
-											This is a narrative-driven puzzle platformer where two hearts must overcome obstacles to unite. I enjoyed making pixel art a lot. 
-										Though the pictures shown in this game is very simple, I will practice more!</p>
-					                <ul class="actions">
-					                    <li><a href="https://alistayyds.itch.io/another-me" class="button">Play on Itch.io</a></li>
-					                </ul>
-					            </div>
-					        </div>
-					    </section>
-						
+                        <div class="polaroid-frame frame-3">
+                            <div class="tape"></div>
+                            <img src="assets/pictures/cat2.jpg" alt="猫猫 3">
+                            <!-- <p class="caption">
+                                <span class="en">Sunny Day ☀️</span>
+                                <span class="zh">晒太阳 ☀️</span>
+                            </p> -->
+                        </div>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-					    <div class="inner">
-					        <h2>Section Two</h2>
-					        <p>Content is currently under construction. Stay tuned!</p>
-					        <div class="features" style="opacity: 0.5;">
-					            <section>
-					                <span class="icon solid major fa-cog"></span>
-					                <h3>Coming Soon</h3>
-					            </section>
-					        </div>
-					    </div>
-					</section>
+                        <!-- <div class="polaroid-frame frame-4">
+                            <div class="tape"></div>
+                            <img src="assets/pictures/cat4.jpg" alt="猫猫 3">
+                             <p class="caption">
+                                <span class="en">Sunny Day ☀️</span>
+                                <span class="zh">晒太阳 ☀️</span>
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						 <div class="inner">
-					        <h2>Section Two</h2>
-					        <p>Content is currently under construction. Stay tuned!</p>
-					        <div class="features" style="opacity: 0.5;">
-					            <section>
-					                <span class="icon solid major fa-cog"></span>
-					                <h3>Coming Soon</h3>
-					            </section>
-					        </div>
-					    </div>
-					</section>
+    </main>
 
-			</div>
+    <footer style="text-align: center; padding: 30px; font-family: 'Caveat', cursive; font-size: 1.2rem; color: #8b7355;">
+        &copy; Angie's web page. All rights reserved.
+    </footer>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('lang-toggle');
+        
+        toggleBtn.addEventListener('click', () => {
+            const currentLang = document.body.getAttribute('data-lang');
+            if (currentLang === 'en') {
+                document.body.setAttribute('data-lang', 'zh');
+            } else {
+                document.body.setAttribute('data-lang', 'en');
+            }
+        });
+    </script>
 
-	</body>
 
+    <div id="image-modal">
+        <img id="modal-img" src="" alt="Enlarged Image">
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
-
-
-
-
-
 
