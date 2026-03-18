@@ -595,3 +595,76 @@ a.logo {
     font-weight: bold !important; /* 稍微加粗，增加分量感 */
     line-height: 1 !important; /* 防止字号变大后把导航栏撑得太高 */
 }
+
+
+/* =========================================
+   移动端汉堡菜单样式
+   ========================================= */
+
+/* 1. 在电脑端默认隐藏汉堡按钮 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 100000 !important; /* 确保按钮永远在最顶层，不会被菜单盖住 */
+    position: relative;
+}
+
+/* 汉堡按钮的三个横线 */
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #8b7355; 
+    border-radius: 3px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/* 2. 只有在屏幕宽度小于 768px (手机/平板) 时才生效 */
+@media screen and (max-width: 768px) {
+    /* 显示汉堡按钮 */
+    .hamburger {
+        display: flex;
+    }
+
+    /* 将导航栏变成侧边滑出菜单 */
+    .top-nav nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* 默认藏在屏幕右侧看不见的地方 */
+        width: 250px;
+        height: 100vh;
+        background-color: #fcf9f2; /* 配合你页面的纸张暖白色 */
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: right 0.4s ease-in-out; /* 滑出动画 */
+        z-index: 99999 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 当菜单被激活时，从右侧滑入 */
+    .top-nav nav.active {
+        right: 0 !important;
+    }
+
+    /* 调整菜单里的列表排版为垂直居中 */
+    .top-nav nav ul {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* 汉堡按钮点击后变成 "X" 的酷炫动画 */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0; /* 中间那根线消失 */
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}

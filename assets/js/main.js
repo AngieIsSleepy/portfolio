@@ -28,6 +28,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // 以后你可以继续在这里添加新的功能逻辑...
+    // =========================================
+    // 2. 移动端汉堡菜单控制 (Hamburger Menu)
+    // =========================================
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    // 同样加个判断，防止在没有导航栏的页面报错
+    if (hamburger && navMenu) {
+        const navLinks = navMenu.querySelectorAll('a');
+
+        // 点击汉堡按钮，切换菜单的显示/隐藏状态
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // 优化体验：点击任意目录链接后，自动收起侧边菜单
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
     
 });
