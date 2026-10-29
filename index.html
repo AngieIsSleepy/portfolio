@@ -264,64 +264,45 @@
 
 
                     <hr style="border: none; border-top: 2px dashed #d1c8b8; margin: 50px 0;">
-                    <div>
+                    <div style="margin-bottom: 40px;">
                         <h2>
-                            <span class="en"><strong>[Under Development]Bargain Brawl!</strong></span>
-                            <span class="zh"><strong><span class="std-en">[开发中]超市大采Go！</span></strong></span>
+                            <span class="en"><strong>Bargain Brawl</strong></span>
+                            <span class="zh"><strong><span class="std-en">Bargain Brawl</span>《疯狂大采Go！》</strong></span>
                         </h2>
-                        
+
                         <div class="en">
-                            <p>A fast-paced, <strong>competitive split-screen party game</strong>. 
-                                Set in a colorful supermarket, 
-                                players take turns to checked out required items. 
-                                Use different items to speed up, 
-                                create foggy zones, and spill liquid on the ground!
-                                Think carefully and find your way in this chaotic store!
-                            </p>
+                            <p>A local two-player <strong>3D competitive party game</strong> developed by a team of three. In each round, the attacker must collect any 3 of 5 target items and touch the checkout zone before time runs out, while the defender uses collisions and item effects to stop them. Players switch roles for the second round, then compare round wins.</p>
                             <ul>
-                                <li><strong>Split-Screen Gameplay:</strong> Architected and programmed a robust <strong>split-screen UI system</strong>. 
-                                    It dynamically manages two independent perspectives, providing instant visual feedback for both players.</li>
-                                <li><strong>Game Rules:</strong> Designed the main gameplay loop: in each round, one collector needs to checkout required items, 
-                                    and the defender needs to try everything to block. The one using less time wins the round.</li>
-                                <li><strong>Various Item Abilities:</strong> Created different items' special abilities, including creating spills that slow players down, 
-                                    eatable food that scales the players, and the melee items that can hit the rival. Multiple item usage adds surprising interactions and more
-                                possibilities to the gaming experience.</li>
+                                <li><strong>Gameplay & Tutorial Design:</strong> Designed and iterated the match loop, role objectives, and tutorial level.</li>
+                                <li><strong>Item Mechanics:</strong> Designed most item abilities and their interactions with the environment. Items can slow or redirect movement, obscure one player's view, change player size and speed, or stun an opponent and knock items from their cart.</li>
+                                <li><strong>Scene Building:</strong> Built the main environment and handled most model placement, material setup, and use of art assets.</li>
                             </ul>
                         </div>
-                        
+
                         <div class="zh">
-                            <p>一款目前正在积极开发中的快节奏、<strong>竞技型派对游戏</strong>。
-                                在一个超市里，玩家需要竞速占领共享 <strong>Bingo 计分板</strong> 上的物品，
-                                仔细思考策略，使用不同的物品道具增幅自己或是阻挠对手吧！
-                            </p>
+                            <p>一款由三人团队开发的<strong>3D 本地双人对抗派对游戏</strong>。每局中，进攻方需要在倒计时结束前收集 5 个目标物中的任意 3 个，并触碰结账区域；防守方则通过购物车碰撞和道具效果阻止对手。两局交换身份后，根据双方胜局数结算。</p>
                             <ul>
-                                <li><strong>同步分屏和视角：</strong> 编写了<strong>分屏 UI 系统</strong>。该系统可动态管理两个独立的玩家视角，同时确保一个共享的 Bingo 计分板实时更新，为两名玩家提供即时的视觉反馈。</li>
-                                <li><strong>事件驱动物品收集：</strong> 设计了一个可扩展的 <strong>事件驱动架构</strong>，
-                                    将物理游戏世界与游戏逻辑相连接。
-                                    此系统可可靠地处理来自超市结账台的“物品结账”事件，直接触发 Bingo 格子的占领和分数计算。</li>
-                                <li><strong>计分逻辑：</strong> 实现了核心的 <strong>博弈竞技规则</strong>。
-                                    系统可自动追踪 25 种独特物品、已被占领的格子，计算得分，从而实现诸如阻碍对手以统治计分板等复杂的游戏逻辑。</li>
+                                <li><strong>玩法与教学设计：</strong>负责对局循环和玩法迭代，设计双方目标，并搭建、优化教学关卡。</li>
+                                <li><strong>道具机制：</strong>设计大部分物品效果及其与环境的交互。道具可减速或改变移动状态、遮挡一方视野、改变角色体型与速度，也可使对手短暂眩晕并撞落购物车中的物品。</li>
+                                <li><strong>场景搭建：</strong>搭建主要场景，负责大部分模型布置、材质绑定及美术素材应用。</li>
                             </ul>
                         </div>
 
                         <div class="app-gallery">
-                            <img src="assets/pictures/BBB1.gif" alt="BBB gif1" class="app-screen game-screen">
-                            <!-- <img src="assets/pictures/BBB2.gif" alt="BBB gif2" class="app-screen game-screen"> -->
-                            <img src="assets/pictures/1.gif" alt="BBB gif2" class="app-screen game-screen">
+                            <img src="assets/pictures/BBB1.gif" alt="Bargain Brawl gameplay" class="app-screen game-screen">
+                            <img src="assets/pictures/1.gif" alt="Bargain Brawl gameplay" class="app-screen game-screen">
                         </div>
 
-                
-
                         <div style="margin-top: 20px;">
-                            <a href="https://alistayyds.itch.io/bargain-bingo-brawl" target="_blank" class="project-btn">
-                                <span class="en">Play on Itch.io!</span>
-                                <span class="zh">完整Demo火热开发中</span>
+                            <a href="https://alistayyds.itch.io/bargain-bingo-brawl" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <span class="en">Play the Demo on Itch.io</span>
+                                <span class="zh">在 <span class="std-en">Itch.io</span> 上体验 Demo</span>
                             </a>
                         </div>
 
                         <div style="margin-top: 20px;">
-                            <a href="https://www.youtube.com/watch?v=Mxd6trUlRZo" target="_blank" class="project-btn">
-                                <span class="en">Watch the Trailer Here!</span>
+                            <a href="https://www.youtube.com/watch?v=Mxd6trUlRZo" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <span class="en">Watch the Trailer</span>
                                 <span class="zh">观看宣传片</span>
                             </a>
                         </div>
@@ -400,6 +381,12 @@
                                 详细 CV
                             </a>
 
+                            <a href="assets/Game_System_Design_Portfolio_Anqi_Dai.pdf" target="_blank" rel="noopener noreferrer" class="project-btn en" style="background-color: #eef3ff; border-color: #c4d3f2;">
+                                Game System Design Portfolio
+                            </a>
+                            <a href="assets/Game_System_Design_Portfolio_Anqi_Dai.pdf" target="_blank" rel="noopener noreferrer" class="project-btn zh" style="background-color: #eef3ff; border-color: #c4d3f2;">
+                                游戏策划作品集
+                            </a>
                             <a href="assets/戴安启_游戏经历.pdf" target="_blank" class="project-btn en" style="background-color: #f0f8f1; border-color: #c0e3c5;">
                                 Gaming Experience
                             </a>
@@ -527,4 +514,6 @@
     </div>
 </body>
 </html>
+
+
 
